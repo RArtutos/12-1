@@ -15,8 +15,8 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center overflow-hidden relative">
-      <div className="relative z-10"> {/* Este contenedor se asegura de que el texto esté en el frente */}
+    <div className="min-h-screen flex flex-col items-center justify-center overflow-hidden relative bg-black">
+      <div className="relative z-10"> {/* Contenedor para el texto */}
         <div 
           className="text-[15rem] font-bold"
           style={{
@@ -43,8 +43,7 @@ function App() {
       <img 
         src={backgroundGif} 
         alt="Background" 
-        className="absolute inset-0 object-cover w-full h-full" 
-        style={{ zIndex: -1, marginTop: '20rem' }} // Ajusta el marginTop según sea necesario
+        className="mt-8 w-1/2 h-auto" // Ajusta el tamaño del GIF según sea necesario
       />
     </div>
   );
