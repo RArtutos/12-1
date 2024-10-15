@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import backgroundGif from '/recursos/background.gif'; // Asegúrate de que la ruta sea correcta
+import backgroundGif from './recursos/background.gif'; // Asegúrate de que la ruta sea correcta
 
 function App() {
   const [color, setColor] = useState('#00ffff');
@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center overflow-hidden relative bg-black">
+    <div className="min-h-screen bg-gradient-radial from-black via-gray-900 to-black flex flex-col items-center justify-center overflow-hidden relative">
       <div className="relative z-10"> {/* Contenedor para el texto */}
         <div 
           className="text-[15rem] font-bold"
@@ -43,7 +43,7 @@ function App() {
       <img 
         src={backgroundGif} 
         alt="Background" 
-        className="mt-8 w-1/2 h-auto" // Ajusta el tamaño del GIF según sea necesario
+        className="mt-8 w-1/2 h-auto z-0" // Ajusta el tamaño del GIF según sea necesario
       />
     </div>
   );
