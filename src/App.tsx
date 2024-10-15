@@ -28,7 +28,7 @@ function App() {
           transition: 'color 1s ease, text-shadow 1s ease'
         }}
       >
-        <span className="relative z-10">13</span>
+        <span className="relative z-10">13 Team</span>
         <span 
           className="absolute inset-0 blur-[2px] opacity-50 led-glow"
           style={{ color: color }}
