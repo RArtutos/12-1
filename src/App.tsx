@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import backgroundGif from './recursos/background.gif'; // Asegúrate de que la ruta sea correcta
+import backgroundGif from '/recursos/background.gif'; // Asegúrate de que la ruta sea correcta
 
 function App() {
   const [color, setColor] = useState('#00ffff');
